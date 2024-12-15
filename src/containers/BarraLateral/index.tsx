@@ -5,15 +5,15 @@ import * as S from './styles'
 const BarraLateral = () => (
   <S.Aside>
     <div>
-      <input type="text" placeholder="Buscar" />
+      <S.Campo type="text" placeholder="Buscar" />
       <div>
         <S.Filtros>
-          <FiltroCard />
-          <FiltroCard />
-          <FiltroCard />
-          <FiltroCard />
-          <FiltroCard />
-          <FiltroCard ativo/>
+          <FiltroCard ativo={false} />
+          <FiltroCard ativo={false} />
+          <FiltroCard ativo={false} />
+          <FiltroCard ativo={false} />
+          <FiltroCard ativo={false} />
+          <FiltroCard ativo={true} />
         </S.Filtros>
       </div>
     </div>
